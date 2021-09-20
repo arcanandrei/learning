@@ -2,7 +2,7 @@
 SIX ADVANTAGES OF CLOUD COMPUTING
  1. Trade capital expense (CAPEX) for operational expense (OPEX)
  2. Benefit from massive economies at scale
-- 
+-- 
 3. Stop guessing capacity
  4. Increase speed and agility
  5. Stop spending money running and maintaining data centers

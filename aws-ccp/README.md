@@ -4,6 +4,7 @@
  2. [Types of Cloud Computing](#types-of-cloud-computing)
  3. [IAM - Identity Access Management](#iam---identity-access-management)
  4. [EC2 - Elastic Compute Cloud](#ec2---elastic-compute-cloud---infrastructure-as-a-service)
+ 5. [EC2 Instance Storage](#ec2-instance-storage)
 
 # Six advantages of Cloud Computing
  1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)
@@ -79,13 +80,19 @@ Option | Description | Max Discount
     - Mapped to **an Availability Zone**
     - Can use EBS Snapshots for backups/transferring EBS volumes across Availability Zones
  2. **AMI (Amazon Machine Images)**
-    - Create ready-to-use EC2 instances with our customizations
-
-
-
-
-
-
-
-
+    - Create ready-to-use EC2 instances with your customizations
+ 3. **EC2 Image Builder**
+    - Automatically build, test and distribute **AMIs**
+ 4. **EC2 Instance Store**
+    - High performance **hardware disk** attached to your EC2 instance
+    - Lost if your instance is stopped or terminated
+ 5. **EFS (Elastic File System)**
+    - **Network** file system, can be attached to multiple instances in the same **Region**
+ 6. **EFS-IA (Elastic File System - Infrequent Access)
+    - Cost-optimized storage class for infrequent accessed files
+ 7. **FSx for Windows**
+    - **Network** file system for Windows
+ 8. **FSx for Lustre (Lustre = Linux + cluster)
+    - High Performance Computing Linux file system
+    - Machine Learning, Analytics, Video Processing, Financial Modeling,...
 

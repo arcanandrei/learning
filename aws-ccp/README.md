@@ -1,6 +1,9 @@
 # Amazon Web Services - Certified Cloud Practitioner
 ## Content
  1. [Six advantages of Cloud Computing](#six-advantages-of-cloud-computing)
+ 2. [Types of Cloud Computing](#types-of-cloud-computing)
+ 3. [IAM - Identity Access Management](#iam---identity-access-management)
+ 4. [EC2 - Elastic Compute Cloud](#ec2---elastic-compute-cloud---infrastructure-as-a-service)
 
 # Six advantages of Cloud Computing
  1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)
@@ -43,7 +46,7 @@ Name | Description
 **Access Keys** | Access AWS using the **CLI** or **SDK**
 **Audit** | **Credential Reports** & **IAM Access Advisor**
 
-# EC2 - Elastic Compute Cloud - IaaS
+# EC2 - Elastic Compute Cloud - Infrastructure as a Service
 
 Name | Description
 -----|------------

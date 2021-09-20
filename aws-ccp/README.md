@@ -21,12 +21,14 @@
     - Completed product that is run and managed by the service provider
 
 ### Notes
----
+
  - [x] On SaaS you don't manage anything
  - [x] On PaaS you only manage Applications and Data
  - [x] On IaaS you manage Application, Data, Runtime, Middleware and OS
  - [x] On-premise you manage everything
 
 ## IAM - Identity Access Management
-  - Users | Mapped to a physical user, has a password for AWS Console
-  - Groups | Contains users only
+Name | Description
+------------------
+Users | Mapped to a physical user, has a password for AWS Console
+Groups | Contains users only

@@ -1,6 +1,8 @@
 # Amazon Web Services - Certified Cloud Practitioner
+## Content
+ 1. [Six advantages of Cloud Computing](#six-advantages-of-cloud-computing)
 
-## Six advantages of Cloud Computing
+# Six advantages of Cloud Computing
  1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)
  2. Benefit from massive economies at scale 
  3. Stop guessing capacity
@@ -8,7 +10,7 @@
  5. Stop spending money running and maintaining data centers
  6. Go global in minutes
 
-## Types of Cloud Computing
+# Types of Cloud Computing
  1. **Infrastructure as a Service (IaaS)**
     - Provide building blocks for IT
     - Provides networking, computers, data storage space
@@ -20,14 +22,14 @@
  3. **Software as a Service (SaaS)**
     - Completed product that is run and managed by the service provider
 
-### Notes
+## Notes
 
  - [x] On SaaS you **don't manage anything**
  - [x] On PaaS you **only** manage Applications and Data
  - [x] On IaaS you manage **Application, Data, Runtime, Middleware and OS**
  - [x] On-premise you manage **everything**
 
-## IAM - Identity Access Management
+# IAM - Identity Access Management
 
 Name | Description
 -----|------------
@@ -41,7 +43,7 @@ Name | Description
 **Access Keys** | Access AWS using the **CLI** or **SDK**
 **Audit** | **Credential Reports** & **IAM Access Advisor**
 
-## EC2 - Elastic Compute Cloud - IaaS
+# EC2 - Elastic Compute Cloud - IaaS
 
 Name | Description
 -----|------------
@@ -52,10 +54,10 @@ Name | Description
 **EC2 Instance Role** | Link to IAM Roles
 **Purchasing Options** | On-Demand, Spot, Reserved (Standard + Convertible + Scheduled), Dedicated Host, Dedicated Instance
 
-### Notes
+## Notes
  - [x] To connect to your EC2 instance directly from your browser, use EC2 Instance Connect
 
-### Purchasing Options Detailed
+## Purchasing Options Detailed
 Option | Description | Max Discount
 -------|-------------|-------------
 **On-Demand Instances** | Short workload, predictable pricing | -
@@ -63,11 +65,11 @@ Option | Description | Max Discount
 **Reserved Instances** | Ideal for long workloads | 1 year = +; 3 years = +++
 **Convertible Reserved Instances** | Long workloads with flexible instances | up to 45%
 **Scheduled Reserved Instances** | For example -- Every Thursday between 3PM and 6PM | -
-**Spot Instances** | Short workloads, cheap and predictable to lose (less reliable) | 90%
+**Spot Instances** | Short workloads, cheap and predictable to lose (less reliable) | up to 90%
 **Dedicated Hosts** | Book an entire physical server, control instance placement | -
 **Dedicated Instances** | No other customer will share your hardware | -
 
-
+# EC2
 
 
 

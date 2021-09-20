@@ -1,7 +1,7 @@
 # Amazon Web Services - Certified Cloud Practitioner
 
 ## Six advantages of Cloud Computing
- 1. Trade capital expense (CAPEX) for operational expense (OPEX)
+ 1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)
  2. Benefit from massive economies at scale 
  3. Stop guessing capacity
  4. Increase speed and agility
@@ -22,25 +22,55 @@
 
 ### Notes
 
- - [x] On SaaS you don't manage anything
- - [x] On PaaS you only manage Applications and Data
- - [x] On IaaS you manage Application, Data, Runtime, Middleware and OS
- - [x] On-premise you manage everything
+ - [x] On SaaS you **don't manage anything**
+ - [x] On PaaS you **only** manage Applications and Data
+ - [x] On IaaS you manage **Application, Data, Runtime, Middleware and OS**
+ - [x] On-premise you manage **everything**
 
 ## IAM - Identity Access Management
+
 Name | Description
 -----|------------
 **Users** | Mapped to a physical user, has a password for AWS Console
 **Groups** | Contains users only
-**Policies** | JSON document that outlines permissions for users or groups
-**Roles** | For EC2 (Elastic Compute Cloud) instances or AWS Services
-**Security** | MFA + Password Policy
-**AWS CLI** | Manage your AWS services using the command-line
-**AWS SDK** | Manage your AWS services using a programming language
-**Access Keys** | Access AWS using the CLI or SDK
+**Policies** | **JSON document** that outlines permissions for users or groups
+**Roles** | For *EC2 (Elastic Compute Cloud)** instances or **AWS Services**
+**Security** | **MFA** + **Password Policy**
+**AWS CLI** | Manage your AWS services using the **command-line**
+**AWS SDK** | Manage your AWS services using a **programming language**
+**Access Keys** | Access AWS using the **CLI** or **SDK**
 **Audit** | **Credential Reports** & **IAM Access Advisor**
 
-## EC2 - Elastic Compute Cloud
+## EC2 - Elastic Compute Cloud - IaaS
+
+Name | Description
+-----|------------
+**EC2 Instance** | AMI (OS) + Instance Size (CPU + RAM) + Storage + Security Groups + EC2 User Data
+**Security Groups** | Firewall attached to the EC2 Instance
+**EC2 User Data** | Script launched at the first start of the instance
+**SSH** | Start a terminal into our EC2 instances (port 22)
+**EC2 Instance Role** | Link to IAM Roles
+**Purchasing Options** | On-Demand, Spot, Reserved (Standard + Convertible + Scheduled), Dedicated Host, Dedicated Instance
+
+### Notes
+ - [x] To connect to your EC2 instance directly from your browser, use EC2 Instance Connect
+
+### Purchasing Options Detailed
+Option | Description
+-------|------------
+**On-Demand Instances** | Short workload, predictable pricing
+**Reserved** | Reserved instances for a period for exactly 1 year **or** 3 years
+**Reserved Instances** | Ideal for long workloads
+**Convertible Reserved Instances** | Long workloads with flexible instances
+**Scheduled Reserved Instances** | For example -- Every Thursday between 3PM and 6PM
+**Spot Instances** | Short workloads, cheap and predictable to lose (less reliable)
+**Dedicated Hosts** | Book an entire physical server, control instance placement
+**Dedicated Instances** | No other customer will share your hardware
+
+
+
+
+
 
 
 

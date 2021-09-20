@@ -56,16 +56,16 @@ Name | Description
  - [x] To connect to your EC2 instance directly from your browser, use EC2 Instance Connect
 
 ### Purchasing Options Detailed
-Option | Description
--------|------------
-**On-Demand Instances** | Short workload, predictable pricing
-**Reserved** | Reserved instances for a period for exactly 1 year **or** 3 years
-**Reserved Instances** | Ideal for long workloads
-**Convertible Reserved Instances** | Long workloads with flexible instances
-**Scheduled Reserved Instances** | For example -- Every Thursday between 3PM and 6PM
-**Spot Instances** | Short workloads, cheap and predictable to lose (less reliable)
-**Dedicated Hosts** | Book an entire physical server, control instance placement
-**Dedicated Instances** | No other customer will share your hardware
+Option | Description | Max Discount
+-------|-------------|-------------
+**On-Demand Instances** | Short workload, predictable pricing | -
+**Reserved** | Reserved instances for a period for exactly 1 year **or** 3 years | up to 72%
+**Reserved Instances** | Ideal for long workloads | 1 year = +; 3 years = +++
+**Convertible Reserved Instances** | Long workloads with flexible instances | up to 45%
+**Scheduled Reserved Instances** | For example -- Every Thursday between 3PM and 6PM | -
+**Spot Instances** | Short workloads, cheap and predictable to lose (less reliable) | 90%
+**Dedicated Hosts** | Book an entire physical server, control instance placement | -
+**Dedicated Instances** | No other customer will share your hardware | -
 
 
 

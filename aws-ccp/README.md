@@ -1,15 +1,14 @@
----------------------------------
-SIX ADVANTAGES OF CLOUD COMPUTING
+# Amazon Web Services - Certified Cloud Practitioner
+
+## Six advantages of Cloud Computing
  1. Trade capital expense (CAPEX) for operational expense (OPEX)
- 2. Benefit from massive economies at scale
--- 
-3. Stop guessing capacity
+ 2. Benefit from massive economies at scale 
+ 3. Stop guessing capacity
  4. Increase speed and agility
  5. Stop spending money running and maintaining data centers
  6. Go global in minutes
 
-------------------------
-TYPES OF CLOUD COMPUTING
+## Types of Cloud Computing
  1. Infrastructure as a Service (IaaS)
   - Provide building blocks for IT
   - Provides networking, computers, data storage space
@@ -21,13 +20,12 @@ TYPES OF CLOUD COMPUTING
  3. Software as a Service (SaaS)
   - Completed product that is run and managed by the service provider
 
-Notes:
- - On SaaS you don't manage anything
- - On PaaS you only manage Applications and Data
- - On IaaS you manage Application, Data, Runtime, Middleware and OS
- - On-premise you manage everything
+### Notes:
+- [x] On SaaS you don't manage anything
+- [x] On PaaS you only manage Applications and Data
+- [x] On IaaS you manage Application, Data, Runtime, Middleware and OS
+- [x] On-premise you manage everything
 
-------------------------------------
-IAM (IDENTITY AND ACCESS MANAGEMENT)
+# IAM - Identity Access Management
  - Users - Mapped to a physical user, has a password for AWS Console
 

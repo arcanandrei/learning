@@ -1,5 +1,5 @@
 # Amazon Web Services - Certified Cloud Practitioner
-## Content
+## Table of Contents
  1. [Six advantages of Cloud Computing](#six-advantages-of-cloud-computing)
  2. [Types of Cloud Computing](#types-of-cloud-computing)
  3. [IAM - Identity Access Management](#iam---identity-access-management)
@@ -72,7 +72,16 @@ Option | Description | Max Discount
 **Dedicated Hosts** | Book an entire physical server, control instance placement | -
 **Dedicated Instances** | No other customer will share your hardware | -
 
-# EC2
+# EC2 Instance Storage
+
+ 1. **EBS Volumes (Elastic Block Store)**
+    - Network drives attached to **one** EC2 instance at a time
+    - Mapped to **an Availability Zone**
+    - Can use EBS Snapshots for backups/transferring EBS volumes across Availability Zones
+ 2. **AMI (Amazon Machine Images)**
+    - Create ready-to-use EC2 instances with our customizations
+
+
 
 
 

@@ -157,7 +157,7 @@ Service | Description
 **Storage Gateway** | Bridge between on-premise data and cloud data in S3 (File Gateway, Volume Gateway, Tape Gateway)
 
 ## S3 Storage Classes
-  | S3 Standard | S3 Intelligent-Tiering | S3 Standard-IA | S3 One Zone-IA | S3 Glacier | S3 Glacier Deep Archive
+x | S3 Standard | S3 Intelligent-Tiering | S3 Standard-IA | S3 One Zone-IA | S3 Glacier | S3 Glacier Deep Archive
 --|-------------|------------------------|----------------|----------------|------------|------------------------
 Minimum Storage Duration Charge | N/A | N/A | 30 days | 30 days | 90 days | 180 days
 Retrieval Charge | N/A | N/A | per GB retrieved | per GB retrieved | per GB retrieved | per GB retrieved

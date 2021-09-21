@@ -157,11 +157,85 @@ Service | Description
 **Storage Gateway** | Bridge between on-premise data and cloud data in S3 (File Gateway, Volume Gateway, Tape Gateway)
 
 ## S3 Storage Classes
-x | S3 Standard | S3 Intelligent-Tiering | S3 Standard-IA | S3 One Zone-IA | S3 Glacier | S3 Glacier Deep Archive
+&nbsp; | S3 Standard | S3 Intelligent-Tiering | S3 Standard-IA | S3 One Zone-IA | S3 Glacier | S3 Glacier Deep Archive
 --|-------------|------------------------|----------------|----------------|------------|------------------------
 Minimum Storage Duration Charge | N/A | N/A | 30 days | 30 days | 90 days | 180 days
 Retrieval Charge | N/A | N/A | per GB retrieved | per GB retrieved | per GB retrieved | per GB retrieved
 First byte latency | milliseconds | milliseconds | milliseconds | milliseconds | select minutes or hours | select hours
+
+
+# Databases
+
+ 1. **RDS (Relational Database Service)** 
+    - Is a Relational Database (SQL)
+    - OLTP (Online Transaction Processing)
+    - Managed by AWS and allows creation of
+      - PostgreSQL
+      - MySQL
+      - MariaDB
+      - Oracle
+      - Microsoft SQL Server
+      - Aurora (AWS Proprietary Database)
+ 2. **Aurora**
+    - Supports PostgreSQL and MySQL
+    - 5x performance improvement over MySQL on RDS
+    - 3x performance improvement over PostgreSQL on RDS
+    - Costs more than RDS (20%) - but more efficient
+ 3. **DocumentDB**
+    - Same as Aurora but for MongoDB (NoSQL)
+ 4. **ElastiCache**
+    - In-memory database that can be used for other databases other than DynamoDB
+    - Helps to reduce load off database for Read-intensive workloads
+ 5. **DynamoDB**
+    - NoSQL database (key - value stored JSON)
+    - Distributed **serverless** database
+    - Fast and consistent in performance, low cost
+    - **DynamoDB Accelerator (DAX)**
+      - 10x performance improvement
+      - In-memory cache for DynamoDB
+ 6. **Redshift**
+    - Not used for OLTP, instead used for **OLAP (online analytical processing)**
+    - 10x better performance than other data warehouse, scale to PBs of data
+    - Can be integrated with BI tools
+ 7. **EMR (Elastic Map Reduce)**
+    - Create **Hadoop clusters (Big Data)**
+    - Used for data processing, machine learning, web indexing, big data
+ 8. **Athena**
+    - Fully serverless database with SQL capabilities
+    - Used to query data in S3
+    - Pay-per-query
+ 9. **QuickSight**
+    - Serverless machine-learning powered business intelligence service to create interactive dashboards
+ 10. **Neptune**
+    - Graph Database
+    - Billions of relations
+    - Great for knowledge graphs, fraud detection, recommendation engines, social networking
+ 11. **QLDB (Quantum Ledger Database)**
+    - Recording financial transactions
+    - No entry can be removed or modified, cryptographically verifiable
+ 12. **Glue**
+    - Managed extract, transform and load service (ETL)
+    - Fully serverless
+ 13. **DMS (Database Migration Service)**
+    - Fully migrate databases
+    - The source database remains available during the migration
+
+Service | Type | Best used for | Serverless | Managed | Notes
+--------|------|---------------|------------|---------|------
+RDS | SQL | Traditional applications | | [x] | Relational database
+Aurora | SQL | Traditional applications | | [x] | PostgreSQL & MySQL compatible
+DocumentDB | NoSQL | Content management | | [x] | MongoDB compatible
+DynamoDB | NoSQL | High traffic web apps, e-commerce, gaming | | [x] | Fast and consistent, low-latency
+Redshift | SQL | Data warehouse, scale to PBs of data | | [x] | Columnar storage of data, OLAP
+Athena | SQL | Query data in S3 | [x] | [x] | Pay per query
+QLDB | SQL | Record financial transactions | [x] | [x] | No entry can be modified or removed
+Neptune | Graph | Recommendation engines, Social netorks | | [x] | Billions of relations and query with milliseconds latency
+ElastiCache | Caching | Caching, session management, gaming leaderboards | | [x] | High performance, Redis or Memcached
+EMR | Process | Data Processing, Machine Learning, Big Data | | [x] | Create Hadoop clusters (Big Data)
+QuickSight | Process | Create interactive dashboards | [x] | [x] | Integrated with RDS, Aurora, Athena, Redshift, RDS
+Glue | Process | Prepare and transform data for analytics | [x] | [x] | Extract, transform and load (ETL) 
+DMS | Process | Migrate databases to AWS | | [x] | Supports both homogeneous and heterogeneous migrations
+
 
 
 

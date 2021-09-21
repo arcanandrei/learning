@@ -244,7 +244,7 @@ DMS | Process | Migrate databases to AWS | | [x] | Supports both homogeneous and
 
 Service | Description | Notes
 --------|-------------|------
-**ECS (Elastic Container Service) | Run Docker containers on EC2 instances | 
+**ECS (Elastic Container Service)** | Run Docker containers on EC2 instances | 
 **Fargate** | Run Docker containers without provisioning the infrastructure | Serverless offering (No EC2 instances)
 **ECR (Elastic Container Registry)** | Private Docker Images Repository | 
 **Batch** | Run Batch jobs on AWS across managed EC2 instances |
@@ -266,5 +266,105 @@ Service | Description | Notes
  6. **API Gateway**
     - Expose Lambda functions as **HTTP API**
 
+# Deployment
+
+Service | Description | Platform | Notes
+--------|-------------|----------|------
+**CloudFormation** | IaaS, works with almost all AWS resources | AWS | Can be repeated across regions and accounts
+**BeanStalk** | PaaS, limited to certain programming languages or Docker | AWS | Deploy code consistently with a known architecture, developer is responsible only for the application code
+**CodeDeploy** | Deploy & Upgrade any application onto servers | Hybrid | 
+**Systems Manager** | Patch, Configure & Run commands at scale | Hybrid | Get operational insights about the state of your infrastructure
+**OpsWorks** | Managed Chef & Puppet in AWS | Hybrid | Chef & Puppet in exam -> OpsWorks
+
+# Developer services
+
+Service | Description
+--------|------------
+**CodeCommit** | Store code in private GIT repository (version controlled)
+**CodeBuild** | Build & Test code in AWS
+**CodeDeploy** | Deploy code onto servers
+**CodePipeline** | Orchestration of pipeline (from code to build to deploy)
+**CodeArtifact** | Store software packages & dependencies on AWS
+**CodeStar** | Unified view for allowing developers to do CI/CD & code
+**Cloud9** | Cloud IDE with collaboration possibility
+**AWS CDK** | Define your cloud infrastructure using a programming language
+
+# Global Applications
+
+ 1. **Route 53**
+    - Global DNS
+    - Great to route users to the closest deployment with least latency
+    - Grest for disaster recovery strategies
+ 2. **CloudFront**
+    - Global **Content Delivery Network (CDN)**
+    - Replicate part of your applications to AWS Edge Locations - decrease latency
+    - Cache common requests - improved user experience and decreased latency
+ 3. **S3 Transfer Acceleration**
+    - Accelerate global uploads & downloads into **Amazon S3**
+ 4. **AWS Global Accelerator**
+    - Improve global application availability & performance using the AWS global network
+ 5. **AWS Outposts**
+    - Deploy Outposts Racks in your own Data Centers to extend AWS services
+ 6. **AWS WaveLength**
+    - Brings AWS services to the edge of 5G networks
+    - Ultra low-latency applications
+
+# Cloud Integration
+
+ 1. **SQS (Simple Queue Service)**
+    - Queue service in AWS
+    - Multiple Producers, messages are kept up to 14 days
+    - Multiple Consumers share the read and delete messages when done
+    - Used to **decouple** applications in AWS
+ 2. **SNS (Simple Notification Service)**
+    - Notification service in AWS
+    - Subscribers: Email, Lambda, SQS, HTTP, Mobile,...
+    - Multiple Subscribers, send all messages to all of them
+    - **No message retention**
+ 3. **Kinesis**
+    - Real-time data streaming, persistence and analysis
+ 4. **Amazon MQ**
+    - Managed Apache MQ in the cloud (MQTT, AMQP protocols)
+    - Used to easily migrate to the cloud instead of re-engineering the application to use SQS or SNS
+
+# Cloud Monitoring
+
+ 1. **CloudWatch**
+    - **Metrics**
+      - Monitor the performance of AWS services and billing metrics
+    - **Alarms**
+      - Automate notification, perform EC2 action, notify to SNS based on metric
+    - **Logs**
+      - Collect log files from EC2 instances, servers, Lambda functions,...
+    - **Events (or EventBridge)**
+      - React to events in AWS, or trigger a rule on a schedule
+ 2. **CloudTrail**
+    - Audit API calls made within your AWS account
+ 3. **CloudTrail Insights**
+    - Automated analysis of your CloudTrail events
+ 4. **X-Ray**
+    - Trace requests made through your distributed applications
+ 5. **Service Health Dashboard**
+    - Status of all AWS services across all regions
+ 6. **Personal Health Dashboard**
+    - AWS events that impact your infrastructure
+ 7. **Amazon CodeGuru**
+    - Automated code reviews and application performance recommendations
+
+# VPC
+
+# Security & Compliance
+
+# Machine Learning
+
+# Management, Billing & Support
+
+# Advanced Identity
+
+# Other AWS Services
+
+# AWS Architecting & Ecosystem
+
+## AWS Well-Architected Pillars
 
 

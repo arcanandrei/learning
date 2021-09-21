@@ -549,6 +549,24 @@ Service | Description
 
 ### Reliability
 
+ - [x] Test recovery procedures
+ - [x] Automatically recover from failure
+ - [x] Scale horizontally to increase aggregate system availability
+ - [x] Stop guessing capacity
+ - [x] Manage change in automation
+
 ### Performance Efficiency
 
+ - [x] Democratize advanced technologies
+ - [x] Go global in minutes
+ - [x] Use serverless architectures
+ - [x] Experiment more often
+ - [x] Mechanical sympathy
+
 ### Cost Optimization
+
+ - [x] Adopt a consumption mode
+ - [x] Measure overall efficiency
+ - [x] Stop spending money on data center operations
+ - [x] Analyze and attribute expediture
+ - [x] Use managed application level services to reduce cost of ownership

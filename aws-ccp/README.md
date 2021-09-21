@@ -484,7 +484,33 @@ Service | Description
 
 # Advanced Identity
 
+ - **IAM**
+    - Identity and Access Management inside your AWS Account
+    - For Users that you trust and belong to your company
+ - **Organizations**
+    - Manage multiple AWS Accounts
+ - **Security Token Service (STS)**
+    - Temporary, Limited-privileges credentials to access AWS resources
+ - **Cognito**
+    - Create a database of users for your mobile & web applications
+    - Automatically sign-up, login available
+ - **Directory Services**
+    - Integrate Microsoft Active Directory in AWS
+ - **Single Sign-On (SSO)**
+    - One login for multiple AWS accounts & applications
+
 # Other AWS Services
+
+Service | Description
+--------|------------
+**WorkSpaces** | Desktop as a Service to provision Virtual Desktops
+**AppStream 2.0** | Desktop application inside broswer
+**Sumerian** | Create VR, AR and 3D applications
+**IoT Core** | Connect billions of IoT devices together
+**Elastic Transcoder** | Convert media files stored in S3 Bucket in formats required by consumer devices
+**Device Farm** | Test web and mobile applications against desktop browsers, mobiles and tablets
+**AWS Backup** | Centrally manage and automate backups across AWS Services
+**CloudEndure** | For Disaster Recovery, quick recover servers into AWS
 
 # AWS Architecting & Ecosystem
 
@@ -492,7 +518,22 @@ Service | Description
 
 ### Operational Excellence
 
+ - [x] Perform operations as code
+ - [x] Annotate documentation
+ - [x] Make frequent, small, reversible changes
+ - [x] Refine operations procedures frequently
+ - [x] Anticipate failure
+ - [x] Learn from all operational failures
+
 ### Security
+
+ - [x] Implement a strong identity foundation
+ - [x] Enable traceability
+ - [x] Apply security at all layers
+ - [x] Automate security best practices
+ - [x] Protect data in transit and at rest
+ - [x] Keep people away from data
+ - [x] Prepare for security events
 
 ### Reliability
 

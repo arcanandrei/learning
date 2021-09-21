@@ -9,6 +9,18 @@
  7. [Amazon S3 (Simple Storage Service)](#amazon-s3-simple-storage-service)
  8. [Databases](#databases)
  9. [Other Compute Services](#other-compute-services)
+ 10. [Deployment](#deployment)
+ 11. [Developer services](#developer-services)
+ 12. [Global Applications](#global-applications)
+ 13. [Cloud Integration](#cloud-integration)
+ 14. [Cloud Monitoring](#cloud-monitoring)
+ 15. [VPC (Virtual Private Cloud)](#vpc-virtual-private-cloud)
+ 16. [Security & Compliance](#security--compliance)
+ 17. [Machine Learning](#machine-learning)
+ 18. [Management, Billing & Support](#management-billing--support)
+ 19. [Advanced Identity](#advanced-identity)
+ 20. [Other AWS Services](#other-aws-services)
+ 21. [AWS Architecting & Ecosystem](#aws-architecting--ecosystem)
 
 # Six advantages of Cloud Computing
  1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)

@@ -351,13 +351,136 @@ Service | Description
  7. **Amazon CodeGuru**
     - Automated code reviews and application performance recommendations
 
-# VPC
+# VPC (Virtual Private Cloud)
+
+Name | Description
+-----|------------
+**Subnets** | Tied to an Availability Zone, network partition of the VPC
+**Internet Gateway** | At the **VPC Level**, provide Internet Access
+**NAT Gateway/Instances (Network Address Translation)** | Give Internet Access to **private** subnets
+**NACL (Network Access Control List)** | Stateless, Subnet rules for inbound & outbound
+**Security Groups** | Stateful, operate at the EC2 instance level
+**VPC Peering** | Connect two VPCs with non-overlapping IP ranges, non-transitive
+**VPC Endpoints** | Provide private access to AWS Services within VPC
+**VPC Flow Logs** | Network traffic logs
+**Site to Site VPN** | VPN over public internet between On-Premises and AWS
+**Direct Connect** | Direct private connections to AWS
+**Transit Gateway** | Connect thousands of VPC and On-Premises networks together
 
 # Security & Compliance
 
+Service | Description
+--------|------------
+**Shield** | Automatic DDoS Protection + 24/7 support for Advanced
+**WAF (Web Application Firewall)** | Firewall to filter incoming requests based on rules
+**KMS (Key Management Service)** | Encryption keys managed by AWS
+**CloudHSM** | Hardware encryption, where you manage the encryption keys
+**AWS Certificate Manager** | Provision, manage and deploy SSL/TLS Certificates
+**Artifact** | Get access to compliance reports such as **PCI (Payment Card Industry)**, **ISO**,...
+**GuardDuty** | Find malicious behavior with VPC, DNS & CloudTrail logs
+**Inspector** | For **EC2 Only**, install agent and find vulnerabilities
+**Config** | Track config changes and compliance against rules
+**Macie** | Find sensitive data (ex. **PII**) in Amazon S3 buckets
+**CloudTrail** | Track API calls made by users within account
+**AWS Security Hub** | Gather security findings from multiple AWS accounts
+**Amazon Detective** | Find the **root cause** of security issues or suspicious activities
+**AWS Abuse** | Report AWS resources used for abusive or illegal purposes
+
 # Machine Learning
 
+Service | Description
+--------|------------
+**Rekognition** | Face detection, labeling, celebrity recognition
+**Transcribe** | Audio to text (ex. subtitles)
+**Polly** | Text to audio
+**Translate** | Translations
+**Lex** | Build conversational bots, automatic speech recognition, understanding natural language
+**Connect** | Cloud contact center
+**Comprehend** | Natural language processing, uses machine learning to find relationships in text
+**SageMaker** | Machine Learning for developers and data scientists
+**Forecast** | Build accurate forecasts
+**Kendra** | ML-powered search engine for documents
+**Personalize** | Real-time personalized recommendations
+
 # Management, Billing & Support
+
+## Account Best Practices
+
+    - Operate multiple accounts using **Organizations**
+    - Use **SCP (Service Control Policies)** to restrict account power
+    - Easily setup multiple accounts with best-practices with **AWS Control Tower**
+    - **Use Tags & Cost-Allocation Tags** for easy management & billing
+    - **IAM Guidelines** - MFA, least-privilege, password policy, password rotation
+    - **Config** to record all resources configurations & compliance over time
+    - **CloudFormation** to deploy stacks across accounts and regions
+    - **Trusted Advisor** to get insights, Support Plan adapted to your needs
+    - Send Service Logs and Access Logs to **S3** or **CloudWatch Logs**
+    - **CloudTrail** to record API calls made within your account
+    - **If your AWS account is compromised** change the root password, delete and rotate all passwords/keys, contact the AWS support
+
+## Billing and Costing Tools
+
+ 1. **Compute Optimizer**
+    - Recommends resources configurations to redue cost
+ 2. **TCO Calculator**
+    - From On-Premises to AWS
+ 3. **Simple Monthly Calculator / Pricing Calculator**
+    - Cost of AWS services
+ 4. **Billing Dashboard**
+    - High level overview + free tier dashboard 
+ 5. **Cost Allocation Tags**
+    - Tag resources to create detailed reports
+ 6. **Cost Explorer**
+    - Visualize and manage your AWS Costs and Usage over time
+    - Analyze your data at high level, across all accounts
+    - Choose an optimal **Savings Plan**
+ 7. **Cost and Usage Reports**
+    - Dive **deeper** into costs and usage
+    - The most comprehensive set of AWS cost and usage data available
+    - Per account/per service reports
+ 8. **Billing Alarms**
+    - In us-east-1 - track overall and per-service billing
+ 9. **Budgets**
+    - More advanced - track usage, costs, RI and get alerts
+ 10. **Savings Plans**
+    - Easy way to save based on long-term usage of AWS
+
+## Trusted Advisor
+
+ - [x] Core checks available for all customers
+ - [x] Full Trusted Advisor - Available for **Business & Enterprise** support plans
+
+### Cost Optimization
+
+ - [x] Low utilization EC2 instances, idle load balancers, under-utilized EBS volumes,...
+ - [x] Reserved instances & **Savings Plans** optimizations
+
+### Performance
+
+ - [x] High utilization EC2 instances, CloudFront CDN optimizations
+ - [x] EC2 to EBS throughput optimizations
+
+### Security
+
+ - [x] MFA Enabled on Root account, IAM key rotation, exposed Access Keys
+ - [x] S3 Bucket Permissions for public access, security groups with unrestricted ports
+
+### Fault Tolerance
+
+ - [x] EBS Snapshots age, Availability Zone Balance
+ - [x] ASG Multi AZ, RDS Multi AZ, ELB configuration,...
+
+## Support Plans
+
+&nbsp; | Developer | Business | Enterprise
+-------|-----------|----------|-----------
+**Trusted Advisor Checks** | 7 core checks | Full set of checks | Full set of checks
+**Access to Cloud Support Engineers** | | [x] | [x] |
+**Case Response Time** | <12h | <1h | <15m
+**Designated Technical Account Manager (TAM)** | | | [x]
+**Training** | | | Access to self-paced labs
+**Account Assistance** | | | Concierge Support Team
+**Price/Month** | >29$ | >100$ | >15.000$
 
 # Advanced Identity
 
@@ -367,4 +490,12 @@ Service | Description
 
 ## AWS Well-Architected Pillars
 
+### Operational Excellence
 
+### Security
+
+### Reliability
+
+### Performance Efficiency
+
+### Cost Optimization

@@ -88,11 +88,80 @@ Option | Description | Max Discount
     - Lost if your instance is stopped or terminated
  5. **EFS (Elastic File System)**
     - **Network** file system, can be attached to multiple instances in the same **Region**
- 6. **EFS-IA (Elastic File System - Infrequent Access)
+ 6. **EFS-IA (Elastic File System - Infrequent Access)**
     - Cost-optimized storage class for infrequent accessed files
  7. **FSx for Windows**
     - **Network** file system for Windows
- 8. **FSx for Lustre (Lustre = Linux + cluster)
-    - High Performance Computing Linux file system
+ 8. **FSx for Lustre (Lustre = Linux + cluster)**
+    - **High Performance** Computing Linux file system
     - Machine Learning, Analytics, Video Processing, Financial Modeling,...
+
+# ELB & ASG (Elastic Load Balancer & Auto Scaling Groups)
+
+ 1. **High Availability** vs **Scalability** (vertical and horizontal) vs **Elasticity** vs **Agility** in the Cloud
+ 2. **Elastic Load Balancers (ELB)**
+    - Distribute across backend EC2 instances, **can be Multi-AZ**
+    - Supports health checks
+    - 3 Types:
+      - Application Load Balancer (HTTP - Layer 7)
+      - Network Load Balancer (TCP - Layer 4)
+      - Classic Load Balancer (old)
+ 3. **Auto Scaling Groups (ASG)**
+    - Implement Elasticity for your application, across multiple AZ
+    - Scale EC2 instances based on demand on your system, replace unhelathy instances
+    - Integrated with **ELB**
+
+# Amazon S3 (Simple Storage Service)
+
+ - [x] Is a object file system, all object (files) having a key that represents the path
+ - [x] There is no directory within buckets
+ - [x] Supports versioning
+
+## AWS Snow Family
+
+ 1. **Data Migration**
+    - Snowcone
+    - Snowball Edge
+    - Snowmobile
+ 2. **Edge Computing**
+    - Snowcone
+    - Snowball Edge
+
+Service | Capacity | Notes
+--------|----------|------
+Snowcone | 8TB | Lightweight and small (can be used for edge computing)
+Snowball Edge Compute Optimized | 42TB | Use when also is needed a device for computing
+Snowball Edge Storage Optimized | 80TB | Use mainly for transfers but also has some computing capacities
+Snowmobile | 100PB | Secured transport, better than Snowball if you transfer more than 10PB
+
+## Storage Cloud Native Options
+
+Block | File | Object
+------|------|-------
+Amazon EBS | Amazon EFS | Amazon S3
+EC2 Instance Store | | Glacier
+
+Service | Description
+--------|------------
+**Buckets** vs **Objects** | Global unique name, tied to a region
+**S3 Security** | IAM Policy, S3 Bucket Policy (public access), S3 Encryption
+**S3 Websites** | Host a static website on Amazon S3
+**S3 versioning** | Multiple versions for files, prevents acceidental deletes
+**S3 Access Logs** | Log requests made within your S3 bucket
+**S3 Replication** | Same Region or Cross Region, must enable versioning
+**S3 Storage Classes** | Standard, IA, One Zone-IA, Intelligent Tiering, Glacier, Glacier Deep Archive
+**S3 Lifecycle Rules** | Transition Objects between Classes
+**S3 Glacier Vault Lock / S3 Object Lock** | WORM (Write Once Read Many)
+**Snow Family** | Import data onto S3 through a physical device, edge computing
+**OpsHub** | Desktop application to manage Snow Family devices
+**Storage Gateway** | Bridge between on-premise data and cloud data in S3 (File Gateway, Volume Gateway, Tape Gateway)
+
+## S3 Storage Classes
+  | S3 Standard | S3 Intelligent-Tiering | S3 Standard-IA | S3 One Zone-IA | S3 Glacier | S3 Glacier Deep Archive
+--|-------------|------------------------|----------------|----------------|------------|------------------------
+Minimum Storage Duration Charge | N/A | N/A | 30 days | 30 days | 90 days | 180 days
+Retrieval Charge | N/A | N/A | per GB retrieved | per GB retrieved | per GB retrieved | per GB retrieved
+First byte latency | milliseconds | milliseconds | milliseconds | milliseconds | select minutes or hours | select hours
+
+
 

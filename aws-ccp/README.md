@@ -5,6 +5,10 @@
  3. [IAM - Identity Access Management](#iam---identity-access-management)
  4. [EC2 - Elastic Compute Cloud](#ec2---elastic-compute-cloud---infrastructure-as-a-service)
  5. [EC2 Instance Storage](#ec2-instance-storage)
+ 6. [ELB & ASG (Elastic Load Balancer & Auto Scaling Groups)](#elb--asg-elastic-load-balancer--auto-scaling-groups)
+ 7. [Amazon S3 (Simple Storage Service)](#amazon-s3-simple-storage-service)
+ 8. [Databases](#databases)
+ 9. [Other Compute Services](#other-compute-services)
 
 # Six advantages of Cloud Computing
  1. Trade capital expense (**CAPEX**) for operational expense (**OPEX**)
@@ -236,6 +240,31 @@ QuickSight | Process | Create interactive dashboards | [x] | [x] | Integrated wi
 Glue | Process | Prepare and transform data for analytics | [x] | [x] | Extract, transform and load (ETL) 
 DMS | Process | Migrate databases to AWS | | [x] | Supports both homogeneous and heterogeneous migrations
 
+# Other Compute Services
+
+Service | Description | Notes
+--------|-------------|------
+**ECS (Elastic Container Service) | Run Docker containers on EC2 instances | 
+**Fargate** | Run Docker containers without provisioning the infrastructure | Serverless offering (No EC2 instances)
+**ECR (Elastic Container Registry)** | Private Docker Images Repository | 
+**Batch** | Run Batch jobs on AWS across managed EC2 instances |
+**Lightsail** | Predictable & Low-pricing for simple application & DB stacks |
+
+## AWS Lambda
+
+ 1. Lambda is **serverless**
+ 2. **Lambda billing**
+    - By the time run * by the RAM provisioned
+    - By the number of invocations
+ 3. **Language support**
+    - Many programming languages except (arbitrary) Docker
+ 4. **Invocation time**
+    - Up to **15 minutes**
+ 5. **Use cases**
+    - Create thumbnails for images uploaded onto S3
+    - Run a **serverless** cron job
+ 6. **API Gateway**
+    - Expose Lambda functions as **HTTP API**
 
 
 

@@ -406,17 +406,17 @@ Service | Description
 
 ## Account Best Practices
 
-    - Operate multiple accounts using **Organizations**
-    - Use **SCP (Service Control Policies)** to restrict account power
-    - Easily setup multiple accounts with best-practices with **AWS Control Tower**
-    - **Use Tags & Cost-Allocation Tags** for easy management & billing
-    - **IAM Guidelines** - MFA, least-privilege, password policy, password rotation
-    - **Config** to record all resources configurations & compliance over time
-    - **CloudFormation** to deploy stacks across accounts and regions
-    - **Trusted Advisor** to get insights, Support Plan adapted to your needs
-    - Send Service Logs and Access Logs to **S3** or **CloudWatch Logs**
-    - **CloudTrail** to record API calls made within your account
-    - **If your AWS account is compromised** change the root password, delete and rotate all passwords/keys, contact the AWS support
+ - Operate multiple accounts using **Organizations**
+ - Use **SCP (Service Control Policies)** to restrict account power
+ - Easily setup multiple accounts with best-practices with **AWS Control Tower**
+ - **Use Tags & Cost-Allocation Tags** for easy management & billing
+ - **IAM Guidelines** - MFA, least-privilege, password policy, password rotation
+ - **Config** to record all resources configurations & compliance over time
+ - **CloudFormation** to deploy stacks across accounts and regions
+ - **Trusted Advisor** to get insights, Support Plan adapted to your needs
+ - Send Service Logs and Access Logs to **S3** or **CloudWatch Logs**
+ - **CloudTrail** to record API calls made within your account
+ - **If your AWS account is compromised** change the root password, delete and rotate all passwords/keys, contact the AWS support
 
 ## Billing and Costing Tools
 

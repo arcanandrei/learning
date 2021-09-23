@@ -573,12 +573,14 @@ Service | Description
 
 # Things I tend to forget
 
- - [] Natural disasters could destroy an entire region
- - [] S3 and DynamoDB are multi-AZ
- - [] S3 and Lambda scale automatically without intervention
- - [] Concierge support service is present only on Enterprise Support Plan
- - [] Per-second billing is **ONLY** available to Windows, Linux and Ubuntu
+ - [ ] Natural disasters could destroy an entire region
+ - [ ] S3 and DynamoDB are multi-AZ
+ - [ ] S3 and Lambda scale automatically without intervention
+ - [ ] Concierge support service is present only on Enterprise Support Plan
+ - [ ] Per-second billing is **ONLY** available to Windows, Linux and Ubuntu
  - [x] AWS Support API can manage support cases programatically
+ - [x] Amazon S3 offers volume discounts based on usage
+ - [x] IAM Roles can be used to temporarily grant access to AWS resources
 
 ## AWS Serverless Services
 

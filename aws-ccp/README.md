@@ -570,3 +570,22 @@ Service | Description
  - [x] Stop spending money on data center operations
  - [x] Analyze and attribute expediture
  - [x] Use managed application level services to reduce cost of ownership
+
+# Things I tend to forget
+
+ - [] Natural disasters could destroy an entire region
+ - [] S3 and DynamoDB are multi-AZ
+ - [] S3 and Lambda scale automatically without intervention
+ - [] Concierge support service is present only on Enterprise Support Plan
+ - [] Per-second billing is **ONLY** available to Windows, Linux and Ubuntu
+ - [x] AWS Support API can manage support cases programatically
+
+## AWS Serverless Services
+
+Compute | Messaging | Database | Orcherstration
+--------|-----------|----------|---------------
+AWS Lambda | Amazon SQS | Amazon DynamoDB | AWS Step Functions
+AWS Fargate | Amazon SNS | Amazon Aurora Serverless | 
+
+
+
